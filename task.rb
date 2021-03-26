@@ -38,7 +38,7 @@ def q4
 
   # 以下に回答を記載
 
-  sports = sports.compact
+  sports.compact!
 
   # 以下は変更しないで下さい
   p sports
