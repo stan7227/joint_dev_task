@@ -1,6 +1,8 @@
 # 課題の回答は このファイル をご利用下さい。
 # 回答の出力を確認される際は，「ruby main.rb」をターミナルから実行して下さい。
 
+require"pry"
+
 def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
@@ -60,12 +62,26 @@ def q6
 
   # 以下に回答を記載
 
+  # numbers2 = numbers1.map do |number|
+  #  number * 10
+  # end
+
+  # p numbers2
+  numbers1.map! do |number|
+     number * 10
+  end
+
+  p numbers1
+
+
+
 end
 
 def q7
   array = ["1", "2", "3", "4", "5"]
 
   # 以下に回答を記載
+  array.map!(&:to_i)
 
   # 以下は変更しないで下さい
   p array
@@ -75,6 +91,18 @@ def q8
   programming_languages = %w(ruby php python javascript)
 
   # 以下に回答を記載
+  programming_languages.map! do |pl|
+    pl.capitalize
+  end
+
+  # binding.pry
+
+  upper_case_programming_languages = %w(ruby php python javascript)
+  upper_case_programming_languages.map! do |pl|
+      pl.upcase
+    end
+
+    # binding.pry
 
   # 以下は変更しないで下さい
   p programming_languages
