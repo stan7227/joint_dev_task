@@ -17,9 +17,10 @@ def q2
 
   # 以下に回答を記載
 
-  array1 << array2
-  array1.flatten!
-  p array1
+  # array1 << array2
+  # array1.flatten!
+  array3 = array1 + array2
+  p array3
 
 end
 
@@ -37,7 +38,7 @@ def q4
 
   # 以下に回答を記載
 
-  sports.delete(nil)
+  sports = sports.compact
 
   # 以下は変更しないで下さい
   p sports
