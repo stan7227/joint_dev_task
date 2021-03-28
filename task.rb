@@ -205,7 +205,20 @@ def q16
   ]
 
   # 以下に回答を記載
-  
+
+  user1 = users[0]
+  # binding.pry
+  p "私の名前は#{user1[:name]}です。年齢は#{user1[:age]}歳です。"
+
+  user2 = users[1]
+  p "私の名前は#{user2[:name]}です。年齢は#{user2[:age]}歳です。"
+
+  user3 = users[2]
+  p "私の名前は#{user3[:name]}です。年齢は#{user3[:age]}歳です。"
+
+  user4 = users[3]
+  p "私の名前は#{user4[:name]}です。年齢は#{user4[:age]}歳です。"
+
 
 end
 
