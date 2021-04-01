@@ -199,22 +199,27 @@ def q16
     { name: "nakamura", age: 41 }
   ]
 
+  users.each do |user|
+    puts "私の名前は#{users[0][:name]}です。年齢は#{users[0][:age]}です。"
+  end
   # 以下に回答を記載
-  binding.pry
-  user1 = users[0]
   # binding.pry
-  p "私の名前は#{user1[:name]}です。年齢は#{user1[:age]}歳です。"
+  # user1 = users[0]
+  # # binding.pry
+  # p "私の名前は#{user1[:name]}です。年齢は#{user1[:age]}歳です。"
 
-  user2 = users[1]
-  p "私の名前は#{user2[:name]}です。年齢は#{user2[:age]}歳です。"
+  # user2 = users[1]
+  # p "私の名前は#{user2[:name]}です。年齢は#{user2[:age]}歳です。"
 
-  user3 = users[2]
-  p "私の名前は#{user3[:name]}です。年齢は#{user3[:age]}歳です。"
+  # user3 = users[2]
+  # p "私の名前は#{user3[:name]}です。年齢は#{user3[:age]}歳です。"
 
-  user4 = users[3]
-  p "私の名前は#{user4[:name]}です。年齢は#{user4[:age]}歳です。"
+  # user4 = users[3]
+  # p "私の名前は#{user4[:name]}です。年齢は#{user4[:age]}歳です。"
 
-
+  # users.each_value do |user|
+  #   p "私の名前は#{user}です。年齢は#{user}歳です。"
+  # end
 end
 
 class UserQ17
