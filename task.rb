@@ -200,7 +200,7 @@ def q16
   ]
 
   users.each do |user|
-    puts "私の名前は#{users[0][:name]}です。年齢は#{users[0][:age]}です。"
+    puts "私の名前は#{user[:name]}です。年齢は#{user[:age]}歳です。"
   end
   # 以下に回答を記載
   # binding.pry
