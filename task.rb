@@ -1,7 +1,7 @@
 # 課題の回答は このファイル をご利用下さい。
 # 回答の出力を確認される際は，「ruby main.rb」をターミナルから実行して下さい。
 
-require"pry"
+# require"pry"
 
 def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
@@ -224,7 +224,21 @@ end
 
 class UserQ17
   # 以下に回答を記載
+  # attr_accessor :name, :age, :gender
 
+  def initialize(name:, age:, gender:)
+    @name = name
+    @age = age
+    @gender = gender
+  end
+
+  def info
+    puts <<~TEXT
+    名前:#{@name}
+    年齢:#{@age}
+    性別:#{@gender}
+    TEXT
+  end
 end
 
 def q17
@@ -239,6 +253,18 @@ end
 
 class UserQ18
   # 以下に回答を記載
+  def initialize(name:, age:)
+    @name = name
+    @age = age
+  end
+
+  def introduce
+    if @age > 20
+      puts "こんにちは,あじーと申します。宜しくお願いいたいします。"
+    else
+      puts "はいさいまいど〜,ゆたぼんです!!!"
+    end
+  end
 
 end
 
