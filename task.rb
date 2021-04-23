@@ -303,14 +303,13 @@ end
 
 class Zoo
   # 以下に回答を記載
-  attr_reader :name, :entry_fee
   def initialize(name:, entry_fee:)
     @name = name
     @entry_fee = entry_fee
   end
 
   def info_entry_fee(user)
-    result = case user.age
+    admission_fee = case user.age
     when 0..5
       @entry_fee[:infant]
     when 6..12
@@ -320,7 +319,7 @@ class Zoo
     when 65..120
       @entry_fee[:senior]
     end
-    puts "#{user.name}さんの入場料金は #{result} 円です。"
+    puts "#{user.name}さんの入場料金は #{admission_fee} 円です。"
   end
 
 end
